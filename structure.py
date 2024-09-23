@@ -42,7 +42,8 @@ files = [
     f"src/{project_name}/Entity/config_entity.py",
     f"src/{project_name}/Pipelines/__init__.py",
     f"src/{project_name}/Pipelines/training.py",
-    f"src/{project_name}/Pipelines/prediction.py"
+    f"src/{project_name}/Pipelines/prediction.py",
+    "setup.py"
 ]
 
 #iterating each filepath from list
