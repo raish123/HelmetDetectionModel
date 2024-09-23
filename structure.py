@@ -43,7 +43,8 @@ files = [
     f"src/{project_name}/Pipelines/__init__.py",
     f"src/{project_name}/Pipelines/training.py",
     f"src/{project_name}/Pipelines/prediction.py",
-    "setup.py"
+    "setup.py",
+    "timepass.py"
 ]
 
 #iterating each filepath from list
