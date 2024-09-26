@@ -1,0 +1,9 @@
+#In this yaml file we are defining the path of  project stages like dataingestion,basemodel...so on
+artifact_root_dir: artifacts
+
+#stage 1:-Dataingestion stage
+Dataingestion:
+  ingestion_root_dir_path: artifacts/Dataingestion
+  zip_dir_path: artifacts/Dataingestion/
+  unzip_dir_path: artifacts/Dataingestion/
+
