@@ -1,1 +1,12 @@
-testkey: testvalue
+#In this param.yaml file we r defining the model parameter in it as key value pair
+
+include_top: False #True Means whether to include the 3 fully-connected layers at the top of the network.
+weights: imagenet
+input_shape: [224,224,3] #3channel image means its color image
+classes: 2
+classifier_activation: sigmoid
+name: vgg16
+batch_size: 10
+learning_rate: 0.00001
+epochs: 10
+augmentation: True

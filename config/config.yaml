@@ -7,3 +7,13 @@ Dataingestion:
   zip_dir_path: artifacts/Dataingestion/
   unzip_dir_path: artifacts/Dataingestion/
 
+
+#stage2:- we are using baseModel vgg16 and using trainable parameter(weights and bias)
+#to create sequential class of tensorflow
+
+prepare_base_model:
+  root_dirpath: artifacts/base_model
+  base_model_path: artifacts/base_model/basemodel.h5
+  updated_base_model_path: artifacts/base_model/updated_model.h5
+
+
