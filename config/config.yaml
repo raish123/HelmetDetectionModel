@@ -17,3 +17,10 @@ prepare_base_model:
   updated_base_model_path: artifacts/base_model/updated_model.h5
 
 
+#stage3:-in this stage we create checkpoint directory(to get best model) or tensorboar directory to log the error in it
+prepare_callbacks:
+  root_dirpath: artifacts/callbacks
+  tensorboard_log_dirpath: artifacts/callbacks/tensorboard_log_dir #this directory we save our logs files init
+  model_checkpoint_path: artifacts/callbacks/model_checkpoint/model.h5 #in this path after training done save the best model file in name of model.h5
+
+
