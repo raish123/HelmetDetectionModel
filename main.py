@@ -5,6 +5,7 @@ from src.Mask.loggers import logger
 from src.Mask.Pipelines.basemodel_pipeline import BaseModelTraining
 from src.Mask.Pipelines.callback_pipeline import CallbackModelTraining
 from src.Mask.Pipelines.training_pipeline import ModelTrainingPipeline
+from src.Mask.Pipelines.evaluating_pipeline import EvaluatingTraining
 
 
 stage_name = "Data ingestion stage"
@@ -55,6 +56,20 @@ try:
     mtp.main()
     
     logger.info(f">>>>{stage_name4} stopped <<<<<")
+
+except Exception as e:
+    raise CustomException(e,sys)
+
+
+
+stage_name5 = "Evaluating Model Stage"
+try:
+    logger.info(f">>>>{stage_name5} started <<<<<")
+    #creating an object of BaseModelTraining class
+    et = EvaluatingTraining()
+    et.main()
+    
+    logger.info(f">>>>{stage_name5} stopped <<<<<")
 
 except Exception as e:
     raise CustomException(e,sys)

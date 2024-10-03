@@ -31,3 +31,11 @@ model_training:
   root_dirpath: artifacts/model_training
   model_trained_dirpath: artifacts/model_training/model.h5
   data_dirpath: artifacts/Dataingestion/datasets
+
+
+#stage4:-evaluating the model and finding out testing score of model and saving them into json file
+evaluating_model:
+  root_dirpath: artifacts/model_evaluation  
+  model_trained_dirpath: artifacts/model_training/model.h5
+  data_dirpath: artifacts/Dataingestion/datasets
+  score_dirpath: artifacts/model_evaluation/score.json  
